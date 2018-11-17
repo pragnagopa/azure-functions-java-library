@@ -28,6 +28,13 @@ public interface ExecutionContext {
      * @return the invocation ID for the function call.
      */
     String getInvocationId();
+    
+    /**
+     * This method returns the string value of the variable, or null if the variable is not defined in the current functions host process.
+     * @param  name of the environment variable.
+     * @return value of the variable.
+     */
+    String getEnv(String name);
 
     /**
      * Returns the function name.
